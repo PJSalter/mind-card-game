@@ -57,8 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
          }
     ]
     
-    // I will randomise the card array using sort method and Math.random
-    
+    // I will randomise the card array using sort method and Math.random.
+
+    gameArr.sort(() => 0.5 - Math.random())
 
     // now I will pick out the element from my html with the class name of mind-game-dimensions with a query selector.
     const boardStructure = document.querySelector('.mind-game-dimensions');
