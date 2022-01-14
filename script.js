@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // now I will pick out the element from my html with the class name of mind-game-dimensions with a query selector.
     const boardStructure = document.querySelector('.mind-game-dimensions');
-    const showThatResult = document.querySelector('#result');
+    const showThatResult = document.querySelector('#outcome');
     // creating an empty array with the name of choiceOfCards
     let choiceOfCards = [];
     // making another seperate card id empty array.
