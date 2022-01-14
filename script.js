@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         seaCreature.setAttribute('data-id', i)
         // I will create another add event listener which will listen out to the cards that have been clicked on.
         // this will provoke a cardTurnover function.
-        //seaCreature.addEventListener('click', cardTurnover)
+        seaCreature.addEventListener('click', cardTurnover)
 
         // all these cards with different image elements will be placed in the div within the html using the appendChild.
         boardStructure.appendChild(seaCreature)
@@ -98,6 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
             theCards[firstOptionId].setAttribute('src', 'Sea-World-Images/empty-sea-with-starfish.png')
             theCards[secondOptionId].setAttribute('src', 'Sea-World-Images/empty-sea-with-starfish.png')
             winningCards.push(choiceOfCards)
+        } else {
+
         }
     }
 
