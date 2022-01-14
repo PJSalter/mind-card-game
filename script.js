@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
          }
     ]
     
+    // I will randomise the card array using sort method and Math.random
     
 
     // now I will pick out the element from my html with the class name of mind-game-dimensions with a query selector.
