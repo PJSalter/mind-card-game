@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let choiceOfCards = [];
     // making another seperate card id empty array.
     let cardIdArr = [];
+    let winningCards = [];
 
     // Now I will be making the function that will formulate the gaming board.
     function gameBoard () {
@@ -85,6 +86,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // a function will be included to check all of the matched image cards.
+    function inspectingForMatch(){
+        let theCards = document.querySelectorAll('img')
+        // I am saying I want the first value of my array.
+        const firstOptionId = cardIdArr[0]
+        const secondOptionId = cardIdArr[1]
+        // checking that my first item in the array will deeply equal the second item of the array
+        if(choiceOfCards[0] === choiceOfCards[1]){
+            // if the answer is true then I will create an alert with a pop up comment.
+            alert('Yay You have Matched the correct sea creature')
+            theCards[firstOptionId].setAttribute('src', 'Sea-World-Images/empty-sea-with-starfish.png')
+            theCards[secondOptionId].setAttribute('src', 'Sea-World-Images/empty-sea-with-starfish.png')
+            winningCards.push(choiceOfCards)
+        }
+    }
 
     //creating the card turnover function which will interact with the user to actually flip over the card that ther user has chosen.
     function cardTurnover(){
@@ -97,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // I now need to say that if that cards in the choiceOfCards array are equal to two
         if(choiceOfCards.length === 2) {
             //to make sure it all doesnt happen to quickly I will want it to check for a match in under 500 ms.
-            setTimeout(checkForMatch, 500)
+            setTimeout(inspectingForMatch, 500)
         }
     }
 
