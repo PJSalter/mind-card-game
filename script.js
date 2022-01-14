@@ -56,9 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'Sea-World-Images/seahorse.png'
          }
     ]
+    
+    
 
     // now I will pick out the element from my html with the class name of mind-game-dimensions with a query selector.
     const boardStructure = document.querySelector('.mind-game-dimensions');
+    const showThatResult = document.querySelector('#result');
     // creating an empty array with the name of choiceOfCards
     let choiceOfCards = [];
     // making another seperate card id empty array.
@@ -99,7 +102,18 @@ document.addEventListener('DOMContentLoaded', () => {
             theCards[secondOptionId].setAttribute('src', 'Sea-World-Images/empty-sea-with-starfish.png')
             winningCards.push(choiceOfCards)
         } else {
-
+          // if the cards do not match then I will want them to be flipped straight over for the user to then play again.
+          theCards[firstOptionId].setAttribute('src', 'Sea-World-Images/blank-jelly-fish.png')
+          theCards[secondOptionId].setAttribute('src', 'Sea-World-Images/blank-jelly-fish.png')
+          alert('OOOOOOPs I think you got the wrong sea life creature')
+        }
+        // if either these results happen then I will still need to clear the array and the arrays will start to turn over once again.
+        choiceOfCards = []
+        cardIdArr = []
+        showThatResult.textContent = winningCards.length
+        if(winningCards === gameArr.length/2) {
+            // this will show that I have collected all the possible cards in my array.
+            showThatResult.textContent = 'YAAAAAY Congrats You have found all the Sea Life'
         }
     }
 
