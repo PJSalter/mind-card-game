@@ -59,6 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // now I will pick out the element from my html with the class name of mind-game-dimensions with a query selector.
     const boardStructure = document.querySelector('.mind-game-dimensions');
+    // creating an empty array with the name of choiceOfCards
+    let choiceOfCards = [];
+    // making another seperate card id empty array.
+    let cardIdArr = [];
 
     // Now I will be making the function that will formulate the gaming board.
     function gameBoard () {
@@ -77,6 +81,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // all these cards with different image elements will be placed in the div within the html using the appendChild.
         boardStructure.appendChild(seaCreature)
 
+        }
+    }
+
+    // a function will be included to check all of the matched image cards.
+
+    //creating the card turnover function which will interact with the user to actually flip over the card that ther user has chosen.
+    function cardTurnover(){
+        let idOfCard = this.getAttribute('data-id')
+        //pushing the image cards 
+        choiceOfCards.push(gameArr[idOfCard].name)
+        cardIdArr.push(idOfCard)
+        // will let me have an image to the square itself based on the card id that it holds.
+        this.setAttribute('src', gameArr[idOfCard].img)
+        // I now need to say that if that cards in the choiceOfCards array are equal to two
+        if(choiceOfCards.length === 2) {
+            //to make sure it all doesnt happen to quickly I will want it to check for a match in under 500 ms.
+            setTimeout(checkForMatch, 500)
         }
     }
 
