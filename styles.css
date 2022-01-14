@@ -2,9 +2,12 @@
 
 .mind-game-dimensions{
     display: flex;
-    flex-wrap: wrap;
-    height: 300px;
-    width: 400px;
+    flex-direction: reverse-row;
+    height: auto;
+    width: 10%;
+    max-width: 300px;
+    margin: 2rem;
+    gap: 2rem;
 }
 
 
