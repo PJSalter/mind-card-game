@@ -1,4 +1,16 @@
+/* I'll be making a 3 by 4 square grid */
+
+.mind-game-dimensions{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+}
+
+
+/*
 #circles {
     background-color: rgba(33, 134, 160, 0.753);
     border-radius: 50%;
 }
+*/
