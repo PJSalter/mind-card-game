@@ -1,5 +1,10 @@
 /* I'll be making a 3 by 4 square grid */
 
+body{
+    background-color: #5e7eb5;
+}
+
+
 .mind-game-dimensions{
     display: flex;
     flex-direction: reverse-row;
