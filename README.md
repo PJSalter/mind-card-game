@@ -1,10 +1,10 @@
 # mind-card-game :dolphin: :tropical_fish:
 
-[Click to view Mind Game](pjsalter.github.io/mind-card-game/)
+# [Click to view Mind Game](https://pjsalter.github.io/mind-card-game/) :seal: :fish:
 
 ## Under the Sea mind card game is in working progress :octopus: 
 
-## The idea of the game is to simply test the users memory. The user can only see the back of the paired sea life cards. The user must flip over each pair correctly to win the game. :shark: :seal: 
+## The idea of the game is to simply test the users memory. The user can only see the back of the paired sea life cards. The user must flip over each pair correctly to win the game. :shark: 
 
 ## if incorrect then this contains a function to shuffle back so that the User will need to start again. :whale:
 
