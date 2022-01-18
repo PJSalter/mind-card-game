@@ -4,6 +4,19 @@ body{
     background-color: #5e7eb5;
 }
 
+.press-btn {
+    border-radius: 6em;
+    border: 5px solid chocolate;
+    color: chocolate;
+    background-color: lemonchiffon;
+    box-shadow: 10px 2px 33px 15px rgb(251 179 16);
+    padding: 0.8em;
+  }
+
+  .new-game-reset {
+    cursor: pointer;
+  }
+
 img{
     width: 100%;
     height: auto;
@@ -17,6 +30,7 @@ img{
     grid-gap: 2rem;
     align-items: center;
     justify-content: center;
+    padding: 10%;
 }
 
 h1{
@@ -43,10 +57,6 @@ h1{
     font-size: 4rem;
 }
 
-
-/*
-#circles {
-    background-color: rgba(33, 134, 160, 0.753);
-    border-radius: 50%;
-}
-*/
+.stack-lg > * + * {
+    margin-top: 2rem;
+  }
