@@ -56,10 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'Sea-World-Images/seahorse.png'
          }
     ]
-    
-    // I will randomise the card array using sort method and Math.random.
-
-    gameArr.sort(() => 0.5 - Math.random())
 
     // now I will pick out the element from my html with the class name of mind-game-dimensions with a query selector.
     const boardStructure = document.querySelector('.mind-game-dimensions');
@@ -72,6 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Now I will be making the function that will formulate the gaming board.
     function gameBoard () {
+
+         // I will randomise the card array using sort method and Math.random.
+         // This will sort the cards to shuffle them in any order.
+         gameArr.sort(() => 0.5 - Math.random())
+
+
         //I will now use a for loop which will iterate thru my array of cards.
         for (let i = 0; i < gameArr.length; i++){
         //for each card i will make an image element and calling it sea creature.
