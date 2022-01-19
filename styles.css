@@ -40,9 +40,21 @@ h1{
 }
 
 .title {
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
+.ocean-quote{
+    color: #064273;
+    font-size: 25px;
+}
+
+.description-title{
+    color: #1da2d8;
+}
+
+.game-instructions{
+    color: #def3f6;
+}
 .center{
     max-width: 30rem;
     margin-left: auto;
@@ -55,6 +67,7 @@ h1{
 
 .result{
     font-size: 4rem;
+    color: #064273;
 }
 
 .stack-lg > * + * {
