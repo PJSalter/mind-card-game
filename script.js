@@ -13,36 +13,36 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'Sea-World-Images/dolphin.png'
          },
          {
-             name: 'shark',
-             img: 'Sea-World-Images/shark.png'
+             name: 'seal',
+             img: 'Sea-World-Images/seal-love.jpeg'
          },
          {
-            name: 'shark',
-            img: 'Sea-World-Images/shark.png'
-         },
-         {
-            name: 'jellyfish',
-            img: 'Sea-World-Images/jellyFish.png'
+            name: 'seal',
+            img: 'Sea-World-Images/seal-love.jpeg'
          },
          {
             name: 'jellyfish',
             img: 'Sea-World-Images/jellyFish.png'
          },
          {
-             name: 'turtle',
-             img: 'Sea-World-Images/turtle.png'
+            name: 'jellyfish',
+            img: 'Sea-World-Images/jellyFish.png'
          },
          {
-             name: 'turtle',
-             img: 'Sea-World-Images/turtle.png'
+             name: 'tropical-fish',
+             img: 'Sea-World-Images/tropical-fish.jpeg'
+         },
+         {
+             name: 'tropical-fish',
+             img: 'Sea-World-Images/tropical-fish.jpeg'
          },
          {
              name: 'octopus',
-             img: 'Sea-World-Images/Octopus.png'
+             img: 'Sea-World-Images/octopus.jpeg'
          },
          {
             name: 'octopus',
-            img: 'Sea-World-Images/Octopus.png'
+            img: 'Sea-World-Images/octopus.jpeg'
          },
          {
              name: 'seahorse',
